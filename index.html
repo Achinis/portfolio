@@ -4,16 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav>
-            <img src="assets/icons/logo-temp.png" alt="logo">
+            <a href="index.html"><img src="assets/icons/timpani.svg" alt="logo"></a>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="index.html">Instruments</a></li>
-                <li><a href="index.html">Conseils d'experts</a></li>
-                <li><a href="index.html">Cours</a></li>
+                <li><a href="#instruments">Instruments</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#avis">Avis</a></li>
             </ul>
         </nav>
         <main>
@@ -22,7 +24,7 @@
                     <h1> MusicHalle</h1>
                     <p>Instruments du Monde<br>
                     <strong>Explorez la diversité musicale avec MusicHalle, votre boutique d'instruments du monde à Paris</strong></p>
-                    <ul>
+                     <ul>
                         <li class="button">
                             <a href="index.html"><strong>Contactez nous !</strong></a>
                         </li>
@@ -38,11 +40,11 @@
                     </ul>
                 </div>
                 <div>
-                    <img id="Photomoi" src="assets/images/drawing.png" alt="Photo de moi">
+                    <img id="djembe" src="assets/images/djembe-silhouette.jpg" alt="Photo de djembe">
                 </div>
             </header>
-            <section class="instruments">
-                <div>
+            <section id="instruments">
+                <div class="details">
                     <h2>Produits</h2>
                     <p> Découvrez notre collection unique</p>
                 </div>
@@ -50,26 +52,109 @@
                     <li class="card">
                         <img src="assets/images/Pang.png" alt="#">
                         <div>
-                            <span><h3>Hang</h3>
-                            <p> Découvrez les sonorités apaisantes du hang, un instrument mélodique captivant. Parfait pour créer une atmosphère paisible et méditative.</p></span>
+                            <span>
+                                <h3>Hang</h3>
+                                <p> Découvrez les sonorités apaisantes du hang, un instrument mélodique captivant. Parfait pour créer une atmosphère paisible et méditative.</p>
+                            </span>
                             <a class="button white" href="#"><img src="assets/icons/cart.svg" alt=""></a>
                         </div>                        
                     </li>
                     <li class="card">
-                        <img src="assets/images/Pang.png" alt="#">
+                        <img src="assets/images/Djembe-Drum.jpg" alt="#">
                         <div>
-                            <span><h3>Hang</h3>
-                            <p> Découvrez les sonorités apaisantes du hang, un instrument mélodique captivant. Parfait pour créer une atmosphère paisible et méditative.</p></span>
+                            <span><h3>Djembé</h3>
+                            <p> Découvrez la puissance de percussion du Djembé, un instrument captivant. Parfait pour créer une atmosphère dynamique et energique.</p></span>
+                            <a class="button white" href="#"><img src="assets/icons/cart.svg" alt=""></a>
+                        </div>                        
+                    </li>
+                    <li class="card">
+                        <img src="assets/images/guzhen.jpg" alt="#">
+                        <div>
+                            <span><h3>Gu zhen</h3>
+                            <p> Découvrez la douceur du Gu zhen, un instrument intriguant. Idéal pour émouvoir les foules grâce a sa mélodie incroyable.</p></span>
+                            <a class="button white" href="#"><img src="assets/icons/cart.svg" alt=""></a>
+                        </div>                        
+                    </li>
+                    <li class="card">
+                        <img src="assets/images/kora.png" alt="#">
+                        <div>
+                            <span><h3>Kora</h3>
+                            <p>Plongez dans la tradition musicale africaine avec nos koras artisanales. Fabriquées avec expertise, ces instruments à cordes vous transporteront vers des sonorités envoûtantes.</p></span>
                             <a class="button white" href="#"><img src="assets/icons/cart.svg" alt=""></a>
                         </div>                        
                     </li>
                 </ul>
+                <span class="plus">
+                    <a href="#instruments"><h3>Plus</h3></a>
+                </span>
+            </section>
+            <section id="services">                
+                <div>
+                    <p><h3>Promesses</h3>
+                        <ul>
+                            <li>Sélection éclectique d'instruments du monde</li>
+                            <li>Conseils personnalisés de nos experts passionnés</li>
+                            <li>Ambiance accueillante pour une expérience de shopping authentique</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="services">
+                    <div><h3>Ateliers Musicaux</h3>
+                        <p>Participez à nos ateliers musicaux pour explorer et apprendre à jouer des instruments du monde. Rencontrez des artistes locaux et partagez votre passion pour la musique.</p>
+                    </div>
+                    <div><h3>Réparations d'Instruments</h3>
+                        <p>Confiez-nous la réparation et l'entretien de vos instruments de musique du monde. Notre équipe qualifiée veillera à préserver la qualité sonore et l'authenticité de votre instrument.</p>
+                    </div>
+                    <div><h3>Conseils personnalisés</h3>
+                        <p>Nos experts sont là pour vous conseiller sur le choix d'instruments adaptés à votre style musical. Bénéficiez de conseils personnalisés pour enrichir votre expérience musicale.      
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="avis"> 
+                <div class="details">
+                    <h2>Avis</h2>
+                    <p>Nos clients nous adorent !</p>
+                </div>
+                <div class="notes-container">
+                    <div class="card clients">
+                        <img src="assets/icons/evaluation.png" alt="Note de clients">
+                        <strong>Amira : Achat d'une Kora</strong>
+                        <br>
+                        <p>J'ai découvert une superbe kora chez MusicHalle. Le personnel m'a guidé avec passion, et maintenant je peux explorer les magnifiques sonorités de la musique africaine chez moi. Merci !</p>
+                    </div>
+                    <div class="card clients">
+                        <img src="assets/icons/evaluation_1.png" alt="Note de clients">
+                        <strong>Rafael : Atelier Didgeridoo</strong>
+                        <br> 
+                        <p> L'atelier didgeridoo chez MusicHalle était une expérience incroyable. J'ai appris les bases et je suis maintenant fasciné par cet instrument unique. Une immersion musicale captivante !</p>
+                    </div>
+                    <div class="card clients">
+                        <img src="assets/icons/evaluation_1.png" alt="Note de clients">
+                        <strong>Yasmine  : Réparation de Santur</strong>
+                        <br><p>La réparation de mon santur chez MusicHalle a été impeccable. Ils ont préservé la richesse sonore de mon instrument. Un service professionnel et fiable que je recommande vivement.</p>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
             <ul>
-                <li><img src="assets/icons/logo-temp.png" alt="#"></li>
+                <li class="button white">
+                    <a href="#">
+                        <img src="assets/icons/mail.png" alt="#">
+                    </a>
+                </li>
+                <li class="button">
+                    <a href="index.html"><img src="assets/icons/fb.png" alt="facebook"></a>
+                </li>
+                <li class="button">
+                    <a href="index.html"><img src="assets/icons/insta.png" alt="instagram"></a>
+                </li>
+                <li class="button">
+                    <a href="index.html"><img src="assets/icons/linkedin.png" alt="linkedin"></a>
+                </li>
             </ul>
+            <p>©MusicHalle 2025</p>
         </footer>
     </body>
 </html>
